@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/Heroes-App/static/js/main.439bc097.chunk.js",
+    "main.js.map": "/Heroes-App/static/js/main.439bc097.chunk.js.map",
+    "runtime-main.js": "/Heroes-App/static/js/runtime-main.2df42325.js",
+    "runtime-main.js.map": "/Heroes-App/static/js/runtime-main.2df42325.js.map",
+    "static/js/2.5cdcfaf6.chunk.js": "/Heroes-App/static/js/2.5cdcfaf6.chunk.js",
+    "static/js/2.5cdcfaf6.chunk.js.map": "/Heroes-App/static/js/2.5cdcfaf6.chunk.js.map",
+    "index.html": "/Heroes-App/index.html",
+    "static/js/2.5cdcfaf6.chunk.js.LICENSE.txt": "/Heroes-App/static/js/2.5cdcfaf6.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2df42325.js",
+    "static/js/2.5cdcfaf6.chunk.js",
+    "static/js/main.439bc097.chunk.js"
+  ]
+}
