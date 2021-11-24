@@ -19,7 +19,7 @@ export const SearchScreen = () => {
 
     const { searchText } = formValues;
 
-    const heroesFileted = useMemo(() => getHeroesByName(q), [q]);
+    const heroesFiltered = useMemo(() => getHeroesByName(q), [q]);
 
     const handleSearch = (e) => {
         e.preventDefault();
@@ -63,11 +63,11 @@ export const SearchScreen = () => {
                     {
                         (q === '')
                             ? <div className="alert alert-info">Buscar un héroe</div>
-                            : (heroesFileted.length === 0) && <div className="alert alert-danger">No hay resultados: {q}</div>
+                            : (heroesFiltered.length === 0) && <div className="alert alert-danger">No hay resultados: {q}</div>
                     }
 
                     {
-                        heroesFileted.map(hero => (
+                        heroesFiltered.map(hero => (
                             <HeroCard
                                 key={hero.id}
                                 {...hero}
