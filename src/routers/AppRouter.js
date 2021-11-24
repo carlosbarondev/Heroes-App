@@ -1,11 +1,11 @@
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 
 import { LoginScreen } from "../components/login/LoginScreen";
 import { DashboardRoutes } from "./DashboardRoutes";
 
 export const AppRouter = () => {
     return (
-        <BrowserRouter>
+        <HashRouter>
 
             <Routes>
 
@@ -15,6 +15,6 @@ export const AppRouter = () => {
 
             </Routes>
 
-        </BrowserRouter>
+        </HashRouter>
     )
 }
