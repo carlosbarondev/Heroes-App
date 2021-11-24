@@ -5,7 +5,7 @@ import { DashboardRoutes } from "./DashboardRoutes";
 
 export const AppRouter = () => {
     return (
-        <BrowserRouter basename="/heroes-app">
+        <BrowserRouter basename="/Heroes-App">
 
             <Routes>
 
