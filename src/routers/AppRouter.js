@@ -12,7 +12,7 @@ export const AppRouter = () => {
         // Para desplegar la aplicación en GitHub Pages
         // <HashRouter>
 
-        <BrowserRouter>
+        <BrowserRouter basename="/Heroes-App">
 
             <Routes>
 
