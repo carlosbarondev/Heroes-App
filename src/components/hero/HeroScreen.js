@@ -1,6 +1,10 @@
 import { useMemo } from "react";
 import { useParams, Navigate, useNavigate } from "react-router-dom";
+import { heroImages } from "../../helpers/heroImages";
 import { getHeroById } from "../../selectors/getHeroById";
+
+// import batman from '../../assets/heroes/dc-batman.jpg'; // estático
+// const heroImages = require.context('../../assets/heroes', true);
 
 export const HeroScreen = () => {
 
@@ -17,15 +21,17 @@ export const HeroScreen = () => {
         return <Navigate to='/' />
     }
 
-    const { id, superhero, publisher, alter_ego, first_appearance, characters } = hero;
+    const { superhero, publisher, alter_ego, first_appearance, characters } = hero;
 
-    const imagePath = `/assets/${id}.jpg`;
+    // const imagePath = `/assets/${id}.jpg`; desde public/assets
 
     return (
         <div className="row mt-5">
             <div className="col-4">
                 <img
-                    src={imagePath}
+                    // src={imagePath} 
+                    // src={batman} // import
+                    src={heroImages(`./${heroeId}.jpg`).default}
                     alt={superhero}
                     className="img-thumbnail animate__animated animate__fadeInLeft"
                 />
