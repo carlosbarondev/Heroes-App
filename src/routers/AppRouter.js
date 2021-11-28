@@ -1,4 +1,4 @@
-import { Routes, Route, BrowserRouter/*, HashRouter*/ } from "react-router-dom";
+import { Routes, Route, /*BrowserRouter/*, */HashRouter } from "react-router-dom";
 
 import { PrivateRoute } from "./PrivateRoute";
 import { PublicRoute } from "./PublicRoute";
@@ -10,9 +10,9 @@ export const AppRouter = () => {
     return (
 
         // Para desplegar la aplicación en GitHub Pages
-        // <HashRouter>
+        <HashRouter>
 
-        <BrowserRouter>
+            {/* <BrowserRouter> */}
 
             <Routes>
 
@@ -41,9 +41,10 @@ export const AppRouter = () => {
                 {/* <Route path="/*" element={<DashboardRoutes />} /> */}
 
             </Routes>
-        </BrowserRouter>
 
-        // </HashRouter>
+            {/* </BrowserRouter> */}
+
+        </HashRouter>
 
     )
 }
